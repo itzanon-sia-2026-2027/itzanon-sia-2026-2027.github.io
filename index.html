@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classi SIA 2026-2027</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4f7fb;
+        --surface: rgba(255, 255, 255, 0.9);
+        --surface-strong: #ffffff;
+        --text: #1f2937;
+        --muted: #5b6472;
+        --primary: #2563eb;
+        --primary-soft: #dbeafe;
+        --accent: #7c3aed;
+        --border: rgba(148, 163, 184, 0.25);
+        --shadow: 0 24px 60px rgba(37, 99, 235, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top, rgba(124, 58, 237, 0.12), transparent 30%),
+          linear-gradient(180deg, #eef4ff 0%, var(--bg) 55%, #ffffff 100%);
+      }
+
+      .hero {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 72px 24px 48px;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: var(--primary-soft);
+        color: var(--primary);
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      h1 {
+        margin: 20px 0 16px;
+        font-size: clamp(2.4rem, 4vw, 4.2rem);
+        line-height: 1.05;
+      }
+
+      .lead {
+        max-width: 760px;
+        margin: 0;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 22px;
+        margin-top: 42px;
+      }
+
+      .card {
+        padding: 28px;
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        background: var(--surface);
+        backdrop-filter: blur(8px);
+        box-shadow: var(--shadow);
+      }
+
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: 1.6rem;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .card--highlight {
+        background: linear-gradient(135deg, var(--surface-strong), #eef2ff);
+        border-color: rgba(124, 58, 237, 0.18);
+      }
+
+      .footer {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 24px 56px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="hero">
+      <span class="badge">Progetto scolastico</span>
+      <h1>Benvenuti nelle classi SIA 2026-2027</h1>
+      <p class="lead">
+        Questa pagina GitHub Pages raccoglie il progetto dedicato alle classi
+        dell'indirizzo SIA, con uno spazio semplice e chiaro per presentare il
+        percorso di 3B SIA, 4B SIA e 5B SIA.
+      </p>
+
+      <section class="grid" aria-label="Classi SIA">
+        <article class="card">
+          <h2>3B SIA</h2>
+          <p>
+            Il punto di partenza del percorso: nuove competenze, idee da
+            sviluppare e primi progetti da costruire insieme.
+          </p>
+        </article>
+
+        <article class="card card--highlight">
+          <h2>4B SIA</h2>
+          <p>
+            La fase di crescita: attività più strutturate, collaborazione e
+            approfondimenti legati all'informatica e ai sistemi aziendali.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>5B SIA</h2>
+          <p>
+            L'ultimo anno del percorso: esperienza, progetti conclusivi e
+            preparazione alle sfide finali.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Sito GitHub Pages realizzato come progetto scolastico per l'anno
+      2026-2027.
+    </footer>
+  </body>
+</html>
